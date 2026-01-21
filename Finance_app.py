@@ -3,8 +3,6 @@ import streamlit as st
 import datetime
 import pandas as pd
 
-# streamlit run C:\Users\KamalQuazbary\Dropbox\#Objectif2023\Streamlit\2-Finance_Streamlit.py
-
 yf.pdr_override()
 
 st.write("""
@@ -70,4 +68,5 @@ data['EMA'] = data['Adj Close'].ewm(nb_days).mean()
 
 
 st.line_chart(data[['Adj Close','SMA','EMA']])
+
 
